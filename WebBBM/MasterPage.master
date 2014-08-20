@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/justified-nav.css" rel="stylesheet" type="text/css" />
+
+    <title>Banka krvi</title>
+</head>
+
+<body onresize="refresh()">
+    <div id="main_container">
+        <div class="container" id="home">
+            <img src="images/header.jpg" alt="header image" class="img-responsive cleaner" />
+            <div class="masthead" id="masthead">
+                <ul class="nav nav-justified">
+                    <li class="active"><a href="Donors.aspx">DONATORI</a></li>
+                    <li><a href="Donations.aspx">DONACIJE</a></li>
+                    <li><a href="Patients.aspx">PACIJENTI</a></li>
+                    <li><a href="Requests.aspx">ZAHTEVI</a></li>
+                    <li><a href="State.aspx">STANJE</a></li>
+                    <li><a href="Additional.aspx">DODATNE OPCIJE</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+</body>
+</html>
+
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/masonry.pkgd.min.js" type="text/javascript"></script>
